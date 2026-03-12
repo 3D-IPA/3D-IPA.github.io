@@ -1,1 +1,0 @@
-# 3D-IPA.github.io
