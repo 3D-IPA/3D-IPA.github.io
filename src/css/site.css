@@ -24,3 +24,21 @@
     background: #ffffff;
     border-bottom: 3px solid #E7E7E7;
 }
+
+/* ── People page: consistent portrait size ─────────────────────────────── */
+/* Force every media-text portrait to a 1:1 crop regardless of source aspect ratio. */
+.wp-block-media-text .wp-block-media-text__media {
+    align-self: start;
+}
+.wp-block-media-text .wp-block-media-text__media img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* ── Facilities page: responsive video ─────────────────────────────────── */
+.wp-block-video video {
+    width: 100%;
+    height: auto;
+}
