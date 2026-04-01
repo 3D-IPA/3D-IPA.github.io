@@ -1,0 +1,36 @@
+<!--
+  header.html — shared site header and navigation bar.
+
+  To add or rename a nav item, edit the <ul> below.
+  The build script automatically marks the active page with aria-current="page".
+-->
+<body class="wp-singular page-template-default page wp-theme-argent without-featured-image">
+<div id="page" class="hfeed site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header id="masthead" class="site-header" role="banner">
+
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+            <div class="menu-home-container">
+                <ul id="primary-menu" class="menu">
+                    <li class="menu-item{{ACTIVE_HOME}}"><a href="{{ROOT}}index.html"{{ARIA_HOME}}>Home</a></li>
+                    <li class="menu-item{{ACTIVE_PEOPLE}}"><a href="{{ROOT}}people/"{{ARIA_PEOPLE}}>People</a></li>
+                    <li class="menu-item{{ACTIVE_RESEARCH}}"><a href="{{ROOT}}research/"{{ARIA_RESEARCH}}>Research</a></li>
+                    <li class="menu-item{{ACTIVE_PUBLICATIONS}}"><a href="{{ROOT}}publications/"{{ARIA_PUBLICATIONS}}>Publications</a></li>
+                    <li class="menu-item{{ACTIVE_FACILITIES}}"><a href="{{ROOT}}facilities/"{{ARIA_FACILITIES}}>Facilities</a></li>
+                    <li class="menu-item{{ACTIVE_CONTACT}}"><a href="{{ROOT}}contact/"{{ARIA_CONTACT}}>Join the Lab</a></li>
+                </ul>
+            </div>
+        </nav><!-- #site-navigation -->
+
+        <div class="site-branding">
+            <h1 class="site-title"><a href="{{ROOT}}index.html" rel="home">3D IPA Lab</a></h1>
+            <h2 class="site-description">3D Information for Perception and Action Lab</h2>
+        </div><!-- .site-branding -->
+
+    </header><!-- #masthead -->
+
+    <div id="content" class="site-content">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">

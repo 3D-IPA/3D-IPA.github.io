@@ -1,0 +1,26 @@
+/*
+ * site.css
+ * Hand-authored styles for the 3D IPA Lab site.
+ * Edit this file to change site-wide appearance.
+ *
+ * Brand color: #3a6b35 (forest green) — used for section headings and separators.
+ * Site title/description: white (#ffffff) on the dark header photo background.
+ * Brown University header bar: white background with a grey border.
+ */
+
+/* ── Site header text ──────────────────────────────────────────────────── */
+/* Keep the site title and tagline readable over the header photo. */
+.site-title a,
+.site-description {
+    color: #ffffff;
+}
+.site-title {
+    border-color: #ffffff;
+}
+
+/* ── Brown University branded bar ──────────────────────────────────────── */
+/* Override the default brown bar color to use a white bar with grey border. */
+.brown-header {
+    background: #ffffff;
+    border-bottom: 3px solid #E7E7E7;
+}
